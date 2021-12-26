@@ -1,0 +1,568 @@
+/* Google fonts import url */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Google fonts import url */
+
+/* CSS Reset code  */
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style-type: none;
+     font-family: 'Public Sans', sans-serif;
+     scroll-behavior: smooth;
+}
+
+/* root colors and font variales */
+:root{
+     --white:#fff;
+     --yellow:rgb(243, 227, 0);
+     --blue:rgb(0, 0, 161);
+}
+/* utility clases */
+.btn{
+     color: var(--blue);
+     padding: .6rem 1.5rem;
+     background:var(--yellow);
+     border-radius: 30px;
+     font-size: 1.1rem;
+     font-weight: 500;
+     transition: .5s;
+     box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.438);
+}
+.btn:hover{
+     color: var(--yellow);
+     background:var(--blue);
+}
+/* selection design customize */
+::selection{
+     color: var(--blue);
+     background: var(--yellow);
+}
+/* scroll bar customize design */
+/* width */
+::-webkit-scrollbar {
+     width: 10px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+     background:var(--blue);
+
+   }
+   
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background:var(--yellow);
+     border-radius: 10px;
+
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background:var(--white);
+   }
+/* scroll bar customize design ends here */
+.section-heading h1{
+     font-size: 3rem;
+     text-transform: uppercase;
+     color: var(--blue);
+     text-align: center;
+     padding-bottom: 1rem;
+}
+/* utility clases ends here */
+
+
+
+/* navbar design starts from here */
+.menu{
+     display: none;
+     font-size: 1.5rem;
+     color: rgba(22, 22, 22, 0.938);
+}
+.navbar{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 6rem;
+}
+.navbar .nav-left img{
+     width: 2rem;
+     display: none;
+}
+.navbar .nav-left span{
+     color: #fff;
+     font-size: 1.4rem;
+     font-weight: 600;
+     transition: .5s;
+     cursor: pointer;
+}
+.navbar .nav-left span:hover{
+     color: var(--blue);
+}
+.nav-right .nav-links a{
+     color: var(--white);
+     padding: 0 1rem;
+     transition: .5s;
+     font-weight: 500;
+}
+.nav-right .nav-links a:hover{
+     color: var(--yellow);
+}
+/* navbar design ends here */
+
+/* header section design starts from here */
+.header{
+     width: 100%;
+     height: 100vh;
+     padding: 6rem;
+     padding-top: 12rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 7rem;
+     background:url(../images/Rectangle\ 2\ \(2\).png);
+     background-size: 120rem;
+     background-size: 200%;
+     background-repeat: no-repeat;
+     background-position: center center;
+}
+.header-heading{
+     font-size: 3rem;
+     margin-top: -5rem;
+     text-transform: uppercase;
+     color: var(--white);
+     font-weight: 800;
+     padding-bottom: 1.5rem;
+     line-height: 3.5rem;
+}
+.header-detail{
+     font-size: 1.1rem;
+     margin-bottom: 4rem;
+     color: rgb(238, 238, 238);
+     text-transform: capitalize;
+     line-height: 2rem;
+     font-weight: 400;
+}
+.header .right img{
+     width: 37rem;
+}
+/* header section design ends here */
+
+
+/* services section starts from here */
+.services{
+     padding: 3rem 6rem;
+}
+
+.services .img{
+     width: 70%;
+     position: absolute;
+     z-index: -1;
+     margin-top: 14rem;
+     right: 0;
+}
+.services-container{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     justify-content: space-between;
+     gap: 2.5rem;
+     padding: 4rem 0;
+}
+.services-container .service{
+     background:var(--white);
+     box-shadow:  0 0 20px rgba(128, 128, 128, 0.274);
+     border-radius: 10px;
+     text-align: center;
+     padding: 2rem;
+     overflow: hidden;
+     cursor: pointer;
+     transition: .5s;
+}
+.services-container .service:hover{
+     box-shadow: 0 0 10px grey;
+}
+.services-container .service img{
+     width: 8rem;
+     padding-bottom: 2rem;
+     transition: .5s;
+}
+.services-container .service img:hover{
+     transform: scale(1.2);
+}
+.service-title{
+     font-size: 1rem;
+     padding-bottom: .5rem;
+     color: rgb(32, 31, 116);
+     text-transform: uppercase;
+}
+.service-mini-title{
+     font-size: .9rem;
+     color: var(--blue);
+     padding-bottom: 1rem;
+}
+.service-detail{
+     font-size: .8rem;
+     color: grey;
+     line-height: 1.5rem;
+}
+/* services section ends here */
+
+
+/* about us section design starts from here */
+.about{
+     padding: 2rem 6rem;
+}
+.about .section-heading h1{
+     padding-bottom: 0;
+}
+.about-data{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 6rem;
+}
+.about-data .left img{
+     width: 30rem;
+}
+.about-data .right h2{
+     font-size: 1.5rem;
+     padding-bottom: 1.5rem;
+     font-weight: 500;
+     color: black;
+}
+.about-data .right p{
+     font-size: 1.2rem;
+     padding-bottom: 1rem;
+     line-height: 1.5rem;
+     color: rgba(75, 74, 74, 0.822);
+}
+.about-data .right p:nth-child(3){
+     padding-bottom: 3rem;
+}
+/* about us section design ends here */
+
+
+/* products section design starts from her */
+.products-bg{
+     width: 15%;
+     position: absolute;
+     z-index: -1;
+     right: 0;
+     margin-top: 14rem;
+}
+.products{
+     padding: 2rem 6rem;
+}
+.product{
+     transition: .5s;
+     cursor: pointer;
+}
+.products-list{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 12rem;
+     padding: 6rem;
+     text-align: center;
+}
+.products-list .product img{
+     width: 100%;
+     height: 15rem;
+     padding-bottom: 2rem;
+}
+.product-name{
+     font-weight: 500;
+     transition: .5s;
+}
+.product:hover {
+     transform: scale(1.1);
+}
+.product:hover .product-name{
+     color: var(--blue);
+}
+/* products section design ends here */
+
+/* suponser section design starts from her */
+.payment-info{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: auto;
+}
+.each-info{
+     padding: 1rem 2rem;
+     text-align: center;
+     font-weight: 600;
+     position:absolute;
+     font-size: 1.1rem;
+     color: #fff;
+     background: #000;
+     border-radius: 10px;
+     display: none;
+     margin: 2rem;
+     margin-top: 0;
+}
+.each-info::after{
+     content: '';
+     width: 1rem;
+     height: 1rem;
+     background: rgb(0, 0, 0);
+     position: absolute;
+     transform: rotate(45deg);
+     margin-top: .4rem;
+     margin-left: -1rem;
+}
+.each-info span{
+     color: var(--yellow);
+     font-weight: 600;
+     font-size: 1.1rem;
+     margin-bottom: .5rem;
+}
+.union-bank{
+     display: none;
+     /* position: absolute; */
+     /* margin: -3rem 0 0 11rem; */
+}
+.union-bank.hover{
+     display: unset;
+}
+.bitcoin{
+     display: none;
+     /* width: 1rem; */
+}
+.bitcoin.hover{
+     display: unset;
+}
+.coins-ph{
+     display: none;
+     /* position: absolute; */
+     /* margin: -3rem 0 0 27rem; */
+}
+.coins-ph.hover{
+     display: unset;
+}
+.gcash{
+     display: none;
+     /* position: absolute; */
+     /* margin: -2rem 0 0 37rem; */
+}
+.gcash.hover{
+     display: unset;
+}
+.paymaya{
+     display: none;
+     /* position: absolute; */
+     /* margin: -2rem 0 0 46rem; */
+}
+.paymaya.hover{
+     display: unset;
+}
+.paypal{
+     display: none;
+     /* position: absolute; */
+     /* margin: -2rem 0 0 55rem; */
+}
+.paypal.hover{
+     display: unset;
+}
+.suponser{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+     gap: 2rem;
+     padding: 2rem 18rem;
+     align-items: center;
+     align-items: center;
+}
+.suponser img{
+     width: 100%;
+     border-radius: 20px;
+     cursor: pointer;
+     filter: saturate(10) sepia(-10);
+     transition: .5s ease-in;
+}
+.suponser img:hover{
+     transform: scale(1.1);
+     filter: sepia(0);
+}
+/* suponser section design ends here */
+
+
+/* contact section design starts from here */
+
+.contact{
+     padding: 3rem 10rem;
+     margin-bottom: 10rem;
+}
+.contact-data{
+     /* display: grid; */
+     /* grid-template-columns: 1fr 1fr; */
+     justify-content: space-between;
+     align-items: top;
+     gap: 6rem;
+     padding: 4rem 0rem;
+     padding-top: 6rem ;
+     padding-bottom: 0;
+     width: 100%;
+}
+.contact-data .left form{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 100%;
+}
+.contact-data .left form input{
+     border: none;
+     outline: none;
+     margin: .5rem 0;
+     padding: 1rem;
+     background: #fff;
+     font-size: .96rem;
+     color: var(--blue);
+     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.375);
+     border-radius: 10px;
+     border: 2px solid var(--blue);
+
+}
+.form-btns{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+}
+.contact-data .left form .btn{
+     margin-top: 2rem;
+     text-align: center;
+     outline: none;
+     border: none;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     width: 15rem;
+     text-align: right;
+     margin-left: auto;
+     cursor: pointer;
+}
+.contact-data .left form input::placeholder{
+     font-size: .96rem;
+     color: grey;
+}
+.right-item{
+     margin: 1rem 0;
+     padding:  1rem;
+     margin-top: 0;
+     background: var(--white);
+     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.375);
+     border: 2px solid var(--blue);
+     border-radius: 5px;
+     transition: .5s;
+}
+.right-item:hover{
+     box-shadow:0 0 10px rgb(128, 128, 128);
+     border-radius: 10px;
+}
+.right-item .b{
+     padding: 0 1rem 0 0;
+}
+.right-item i{
+     padding: 0 1rem 0 0;
+     color: rgb(255, 217, 0);
+     font-weight: bolder;
+     font-size: 1.1rem;
+}
+/* contact section design endsh here */
+
+
+/* Foooter section design starts from here */
+.contact-bg{
+     position: absolute;
+     width: 100%;
+     left: 0;
+     z-index: -1;
+     height: 34.9rem;
+     margin-top: -14rem;
+}
+.footer{
+     padding: 0 6rem;
+}
+.footer-data{
+     display: grid;
+     grid-template-columns: 2fr 1fr 1fr;
+     gap: 4rem;
+     padding-bottom: 4rem;
+}
+.footer-title{
+     color: #fff;
+     text-transform: uppercase;
+     font-size: 1.4rem;
+     font-weight: 550;
+     margin-bottom: 1.8rem;
+}
+.footer-title::before{
+     content: '';
+     position: absolute;
+     width: 3rem;
+     height: .2rem;
+     background:var(--yellow);
+     margin-top: 1.8rem;
+}
+.about-detail{
+     font-size: 1rem;
+     color: rgb(231, 228, 228);
+     padding: .5rem 0 2rem 0;
+}
+.footer-social i{
+     font-size: 1.5rem;
+     margin: 0 .5rem;
+     padding: .5rem .6rem;
+     cursor: pointer;
+     transition: .5s;
+     border-radius: 5px;
+     color: #fff;
+     color: var(--blue);
+     background: #fff;
+}
+.footer-social i:hover{
+     transform: rotate(360deg);
+     border-radius: 50%;
+}
+.footer-data-item a{
+     display: flex;
+     flex-direction: column;
+     padding: .5rem 0;
+     color: var(--white);
+     transition: .5s;
+     overflow: hidden;
+}
+.footer-data-item a:hover{
+     color: var(--yellow);
+     transform: scale(1.1);
+}
+.footer-contct{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+}
+.footer-contact-detail i{
+     font-size: 1.2rem;
+     color: var(--yellow);
+     padding-right: .5rem;
+}
+.footer-contact-detail span{
+     text-align: right;
+     color: var(--white);
+}
+.copyright{
+     text-align: center;
+     padding: .7rem 0;
+     color: #fff;
+     border-top: 1px solid #fff;
+     left: 0;
+     right: 0;
+     position: absolute;
+     z-index: 223;
+}
+/* Foooter section design ends here */
