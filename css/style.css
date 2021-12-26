@@ -384,10 +384,6 @@
      filter: saturate(10) sepia(-10);
      transition: .5s ease-in;
 }
-.suponser img:hover{
-     transform: scale(1.1);
-     filter: sepia(0);
-}
 /* suponser section design ends here */
 
 
